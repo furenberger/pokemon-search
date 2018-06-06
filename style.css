@@ -51,14 +51,16 @@ input.search {
   display:flex;
   justify-content:space-between;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .suggestions li:nth-child(even) {
-  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
   background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
 }
 .suggestions li:nth-child(odd) {
-  transform: perspective(100px) rotateX(-3deg) translateY(3px);
   background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
 }
 
@@ -84,4 +86,23 @@ a {
   color:black;
   background:rgba(0,0,0,0.1);
   text-decoration: none;
+}
+
+.name{
+  padding: 25px;
+}
+
+.number{
+  padding: 25px;
+
+}
+
+.sprite{
+  padding: 25px;
+}
+
+
+.sprite-image{
+  width: 50px;
+  height: 50px;
 }
