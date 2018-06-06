@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "airbnb",
+    "p5js",
+    "p5js/dom"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      }
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest" : true,
+    "browser": true
+  },
+  "rules": {
+    "arrow-parens": [0],
+    "class-methods-use-this": [0],
+    "comma-dangle": [0],
+    "default-case": [0],
+    "function-paren-newline": [0],
+    "max-len": ["error", {
+      "code": 200,
+      "ignoreComments": true
+    }],
+    "no-use-before-define": [0, {}],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "consistent": true, "minProperties": 4 },
+      "ObjectPattern": { "consistent": true, "minProperties": 6 },
+      "ImportDeclaration": { "consistent": true, "minProperties": 4 },
+      "ExportDeclaration": "always"
+    }],
+    "prefer-promise-reject-errors": [0],
+    "space-before-function-paren": [2, "never"],
+    "prefer-destructuring" : [0],
+    "global-require" : [0],
+    "camelcase":[0],
+    "no-console":[0]
+  }
+}
