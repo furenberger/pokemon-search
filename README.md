@@ -11,4 +11,5 @@ run `npm install`
 This uses eslint for all your linting needs and a simple http-server to host the application.
 
 `npm run start` to start the server.
+
 `npm run lint` to run linting.
